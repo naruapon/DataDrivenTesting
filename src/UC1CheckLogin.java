@@ -61,6 +61,7 @@ class UC1CheckLogin {
 				Row rows = sheet.getRow(i);
 				Cell cell = rows.createCell(4);
 				cell.setCellValue(actual);
+				assertEquals(expected,actual);
 				if(actual.equals(expected)) {
 					Cell cell2 = rows.createCell(5);
 					cell2.setCellValue("Pass");
@@ -80,6 +81,7 @@ class UC1CheckLogin {
 				Row rows = sheet.getRow(i);
 				Cell cell = rows.createCell(4);
 				cell.setCellValue(actual);
+				assertEquals(expected,actual);
 				if(actual.equals(expected)) {
 					Cell cell2 = rows.createCell(5);
 					cell2.setCellValue("Pass");
